@@ -7,10 +7,10 @@ services:
                         - "8089:8080"
                 volumes:
                         - persistent_volume:/app/volumes
-volumes:
-  persistent_volume:
-    driver: local
-    driver_opts:
-      o: bind
-      type: none
-      device: /home/ubuntu/flask/volumes
+                        persistent_volume:
+                                driver: local
+                                driver_opts:
+                                        o: bind
+                                        type: none
+                                        device: /home/ubuntu/flask/volumes≈
+  
